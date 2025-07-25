@@ -40,6 +40,16 @@ Inheritance can be defined as:
 ![img_1.png](img_1.png)
 
 
+## File Handling and Data Interchange Formats in Python
+### The second part of Unit4 Python OOP demonstrates how to handle files and work with CSV and JSON data using Python.
+### File Object and open()
+  File objects are created using open().
+
+<p>Modes: 'r', 'w', 'a', 'r+' (read and write).</p>
+           <p>r --> read file</p>
+           <p>w --> write to a file</p>
+           <p>a -->. append to the end of a file</p>
+           <p>r+ --> read and write to a file</p>
 
 <p style="font-size: medium">Professor Lewis</p>
 <p style="font-size: medium">Reference:  Starting out with Python 5th Edition, Tony Gaddis</p>

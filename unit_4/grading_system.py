@@ -5,6 +5,23 @@ class Student:
         self.__grade = 0.0
         self.__major = " "
 
+        #JSON- Helper method for JSON conversion in Student class
+        #The read_csv_create_object() function in the file_handling.py module
+        #invokes this function to_dict(self) and converts the Student object to
+        # a Python dictionary
+    def to_dict(self):
+        return {
+            "name": self.__name,
+            "grade": self.__grade,
+            "major": self.__major
+        }
+
+    #so we’ll read the csv file row by row to create student object
+    def set_student_info(self, name, grade, major):
+        self.__name = name
+        self.__grade = float(grade)
+        self.__major = major
+
     def enter_student_info(self):
         self.__name = input("Enter student name: ")
         self.__grade = (float(input("Enter student grade: ")))
@@ -12,6 +29,7 @@ class Student:
 
     def get_student_data(self):
         print("Student Name: ", self.__name, "Grade: " , self.__grade, "Major: ", self.__major)
+
 
     #View the state of the current object. The state is the value of the objects attributes
     def __str__(self):
